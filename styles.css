@@ -1,0 +1,132 @@
+/* PASO 1 MOSTRAR LOS ESTILOS DIRECTO CON LAS ETIQUETAS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333333;
+}
+
+header {
+    text-align: center;
+}
+
+/* Título del Encabezado */
+h1 {
+    
+    color: #005ba3;
+}
+
+/* Subtítulo del Encabezado */
+h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #009688;
+}
+
+/* Párrafo */
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Mover los elementos al lado derecho */
+    background-color: #333333; /* Color del footer */
+    padding: 10px 20px 10px 10px; /* Ajustar padding para mejor apariencia */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 20px; /* Añadir margen derecho */
+}
+
+.navbar a:last-child {
+    margin-right: 0; /* Quitar margen derecho del último enlace */
+}
+
+.navbar a:hover {
+    background-color: #0b2947;
+}
+
+/* Contenido */
+.content {
+    max-width: 800px;
+   
+    text-align: center;
+    margin-bottom: 30px;
+    /* Añadir margen superior para no ocultar el contenido detrás de la navbar */
+}
+
+/* Botón */
+.btn {
+    background-color: #009688;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition-duration: 0.4s;
+}
+
+/* Estilo al pasar el mouse por encima del botón */
+.btn:hover {
+    background-color: #00796b;
+}
+
+/* Estilos para imágenes */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-top: 20px;
+}
+
+/* Imágenes de Viaje */
+.travel-image {
+    width: 200px; /* Puedes ajustar el tamaño según tus necesidades */
+    height: 200px;
+    border-radius: 10px; /* Para esquinas redondeadas */
+    transition: transform 0.3s; /* Animación suave para el efecto hover */
+    cursor: pointer;
+}
+
+.travel-image:hover {
+    transform: scale(1.1); /* Efecto de hover para agrandar la imagen */
+}
